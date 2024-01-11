@@ -1,0 +1,23 @@
+POST http://localhost:8080/Postal/add
+Content-Type: application/json
+
+{
+  "nom": "ibnsina",
+  "numero": 2,
+  "rue": "2555 agdal",
+  "quartier": "agdal",
+  "ville": "rabat"
+}
+###
+POST http://localhost:8080/Postal/deposer/1
+Content-Type: application/json
+
+{
+  "dateDepot": "2022-05-28",
+  "dateReception": "2023-05-22"
+
+}
+
+###
+GET http://localhost:8080/Postal/All
+Content-Type: application/json
