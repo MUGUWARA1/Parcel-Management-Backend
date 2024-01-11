@@ -1,5 +1,7 @@
+
 POST http://localhost:8080/Postal/add
 Content-Type: application/json
+Authorization: Basic sss kkk
 
 {
   "nom": "ibnsina",
@@ -21,3 +23,17 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/Postal/All
 Content-Type: application/json
+
+
+###
+PUT http://localhost:8080/Postal/update
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nom": "post11",
+  "numero": 2,
+  "rue": "2555 agdal",
+  "quartier": "agdal",
+  "ville": "rabat"
+}
